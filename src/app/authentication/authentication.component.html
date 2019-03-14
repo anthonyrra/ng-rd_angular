@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+      <div style="text-align:center">
+          <h1>
+             {{ title }}
+          </h1>
+        </div>
+    <div class="col-md-6 col-md-offset-3">
+      <mat-card>
+        <form method="POST">
+          <mat-form-field>
+            <input matInput placeholder="Username" name="username" #usr>
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" #pwd name="password">
+          </mat-form-field>
+          <br>    
+          <button mat-button mat-raised-button color="primary" (click)="onClick(usr.value, pwd.value);">Connecter</button>    
+        </form>
+      </mat-card>
+  </div>
+  </div>
+</div>
