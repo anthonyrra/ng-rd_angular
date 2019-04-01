@@ -10,13 +10,10 @@ import {
   MatDialogModule,  
  } from '@angular/material';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HttpClientModule } from '@angular/common/http';
-import { AuthInterceptor } from './http-interceptors/auth-intereceptor';
 
 @NgModule({
   declarations: [
@@ -34,8 +31,7 @@ import { AuthInterceptor } from './http-interceptors/auth-intereceptor';
     MatCardModule,
     MatDialogModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,    
+    ReactiveFormsModule,     
   ],
   bootstrap: [AppComponent],
   exports: [

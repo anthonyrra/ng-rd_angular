@@ -5,8 +5,4 @@ export class AuthService {
   getAuthorizationToken() {
     return 'some-auth-token';
   }
-
-  getUserDetails () {
-    
-  }
 }
